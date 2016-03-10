@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A99266771C8E5A6600EE13CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99266761C8E5A6600EE13CA /* AppDelegate.swift */; };
+		A99266791C8E5A6600EE13CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99266781C8E5A6600EE13CA /* ViewController.swift */; };
+		A992667C1C8E5A6600EE13CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A992667A1C8E5A6600EE13CA /* Main.storyboard */; };
+		A992667E1C8E5A6600EE13CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A992667D1C8E5A6600EE13CA /* Assets.xcassets */; };
+		A99266811C8E5A6600EE13CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A992667F1C8E5A6600EE13CA /* LaunchScreen.storyboard */; };
+		A992668C1C8E5A6600EE13CA /* AstroPicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992668B1C8E5A6600EE13CA /* AstroPicTests.swift */; };
+		A99266971C8E5A6600EE13CA /* AstroPicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99266961C8E5A6600EE13CA /* AstroPicUITests.swift */; };
+		A99266A51C8E5BD500EE13CA /* MediaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99266A41C8E5BD500EE13CA /* MediaRepository.swift */; };
+		A99266A71C8E5C6200EE13CA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A99266A61C8E5C6200EE13CA /* .gitignore */; };
+		A99266A91C8E5CBB00EE13CA /* PrivateConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = A99266A81C8E5CBB00EE13CA /* PrivateConfiguration.plist */; };
+		A99266AB1C8E5D4300EE13CA /* PrivateConfiguration.plist.sample in Resources */ = {isa = PBXBuildFile; fileRef = A99266AA1C8E5D4300EE13CA /* PrivateConfiguration.plist.sample */; };
+		A99266AD1C8E5E7100EE13CA /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99266AC1C8E5E7100EE13CA /* MediaItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A99266881C8E5A6600EE13CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A992666B1C8E5A6600EE13CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A99266721C8E5A6600EE13CA;
+			remoteInfo = AstroPic;
+		};
+		A99266931C8E5A6600EE13CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A992666B1C8E5A6600EE13CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A99266721C8E5A6600EE13CA;
+			remoteInfo = AstroPic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A99266731C8E5A6600EE13CA /* AstroPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99266761C8E5A6600EE13CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A99266781C8E5A6600EE13CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A992667B1C8E5A6600EE13CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A992667D1C8E5A6600EE13CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A99266801C8E5A6600EE13CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A99266821C8E5A6600EE13CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99266871C8E5A6600EE13CA /* AstroPicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroPicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A992668B1C8E5A6600EE13CA /* AstroPicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroPicTests.swift; sourceTree = "<group>"; };
+		A992668D1C8E5A6600EE13CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99266921C8E5A6600EE13CA /* AstroPicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroPicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99266961C8E5A6600EE13CA /* AstroPicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroPicUITests.swift; sourceTree = "<group>"; };
+		A99266981C8E5A6600EE13CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99266A41C8E5BD500EE13CA /* MediaRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaRepository.swift; sourceTree = "<group>"; };
+		A99266A61C8E5C6200EE13CA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A99266A81C8E5CBB00EE13CA /* PrivateConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PrivateConfiguration.plist; sourceTree = "<group>"; };
+		A99266AA1C8E5D4300EE13CA /* PrivateConfiguration.plist.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivateConfiguration.plist.sample; sourceTree = "<group>"; };
+		A99266AC1C8E5E7100EE13CA /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A99266701C8E5A6600EE13CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99266841C8E5A6600EE13CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A992668F1C8E5A6600EE13CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A992666A1C8E5A6600EE13CA = {
+			isa = PBXGroup;
+			children = (
+				A99266A61C8E5C6200EE13CA /* .gitignore */,
+				A99266751C8E5A6600EE13CA /* AstroPic */,
+				A992668A1C8E5A6600EE13CA /* AstroPicTests */,
+				A99266951C8E5A6600EE13CA /* AstroPicUITests */,
+				A99266741C8E5A6600EE13CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A99266741C8E5A6600EE13CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99266731C8E5A6600EE13CA /* AstroPic.app */,
+				A99266871C8E5A6600EE13CA /* AstroPicTests.xctest */,
+				A99266921C8E5A6600EE13CA /* AstroPicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99266751C8E5A6600EE13CA /* AstroPic */ = {
+			isa = PBXGroup;
+			children = (
+				A99266AA1C8E5D4300EE13CA /* PrivateConfiguration.plist.sample */,
+				A99266761C8E5A6600EE13CA /* AppDelegate.swift */,
+				A99266781C8E5A6600EE13CA /* ViewController.swift */,
+				A992667A1C8E5A6600EE13CA /* Main.storyboard */,
+				A992667D1C8E5A6600EE13CA /* Assets.xcassets */,
+				A992667F1C8E5A6600EE13CA /* LaunchScreen.storyboard */,
+				A99266821C8E5A6600EE13CA /* Info.plist */,
+				A99266A41C8E5BD500EE13CA /* MediaRepository.swift */,
+				A99266A81C8E5CBB00EE13CA /* PrivateConfiguration.plist */,
+				A99266AC1C8E5E7100EE13CA /* MediaItem.swift */,
+			);
+			path = AstroPic;
+			sourceTree = "<group>";
+		};
+		A992668A1C8E5A6600EE13CA /* AstroPicTests */ = {
+			isa = PBXGroup;
+			children = (
+				A992668B1C8E5A6600EE13CA /* AstroPicTests.swift */,
+				A992668D1C8E5A6600EE13CA /* Info.plist */,
+			);
+			path = AstroPicTests;
+			sourceTree = "<group>";
+		};
+		A99266951C8E5A6600EE13CA /* AstroPicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A99266961C8E5A6600EE13CA /* AstroPicUITests.swift */,
+				A99266981C8E5A6600EE13CA /* Info.plist */,
+			);
+			path = AstroPicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A99266721C8E5A6600EE13CA /* AstroPic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A992669B1C8E5A6600EE13CA /* Build configuration list for PBXNativeTarget "AstroPic" */;
+			buildPhases = (
+				A992666F1C8E5A6600EE13CA /* Sources */,
+				A99266701C8E5A6600EE13CA /* Frameworks */,
+				A99266711C8E5A6600EE13CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstroPic;
+			productName = AstroPic;
+			productReference = A99266731C8E5A6600EE13CA /* AstroPic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A99266861C8E5A6600EE13CA /* AstroPicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A992669E1C8E5A6600EE13CA /* Build configuration list for PBXNativeTarget "AstroPicTests" */;
+			buildPhases = (
+				A99266831C8E5A6600EE13CA /* Sources */,
+				A99266841C8E5A6600EE13CA /* Frameworks */,
+				A99266851C8E5A6600EE13CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A99266891C8E5A6600EE13CA /* PBXTargetDependency */,
+			);
+			name = AstroPicTests;
+			productName = AstroPicTests;
+			productReference = A99266871C8E5A6600EE13CA /* AstroPicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A99266911C8E5A6600EE13CA /* AstroPicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99266A11C8E5A6600EE13CA /* Build configuration list for PBXNativeTarget "AstroPicUITests" */;
+			buildPhases = (
+				A992668E1C8E5A6600EE13CA /* Sources */,
+				A992668F1C8E5A6600EE13CA /* Frameworks */,
+				A99266901C8E5A6600EE13CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A99266941C8E5A6600EE13CA /* PBXTargetDependency */,
+			);
+			name = AstroPicUITests;
+			productName = AstroPicUITests;
+			productReference = A99266921C8E5A6600EE13CA /* AstroPicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A992666B1C8E5A6600EE13CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jeff Fredrickson";
+				TargetAttributes = {
+					A99266721C8E5A6600EE13CA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 79JQZNXB8V;
+					};
+					A99266861C8E5A6600EE13CA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 79JQZNXB8V;
+						TestTargetID = A99266721C8E5A6600EE13CA;
+					};
+					A99266911C8E5A6600EE13CA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 79JQZNXB8V;
+						TestTargetID = A99266721C8E5A6600EE13CA;
+					};
+				};
+			};
+			buildConfigurationList = A992666E1C8E5A6600EE13CA /* Build configuration list for PBXProject "AstroPic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A992666A1C8E5A6600EE13CA;
+			productRefGroup = A99266741C8E5A6600EE13CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A99266721C8E5A6600EE13CA /* AstroPic */,
+				A99266861C8E5A6600EE13CA /* AstroPicTests */,
+				A99266911C8E5A6600EE13CA /* AstroPicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A99266711C8E5A6600EE13CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99266AB1C8E5D4300EE13CA /* PrivateConfiguration.plist.sample in Resources */,
+				A99266A91C8E5CBB00EE13CA /* PrivateConfiguration.plist in Resources */,
+				A99266A71C8E5C6200EE13CA /* .gitignore in Resources */,
+				A99266811C8E5A6600EE13CA /* LaunchScreen.storyboard in Resources */,
+				A992667E1C8E5A6600EE13CA /* Assets.xcassets in Resources */,
+				A992667C1C8E5A6600EE13CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99266851C8E5A6600EE13CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99266901C8E5A6600EE13CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A992666F1C8E5A6600EE13CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99266791C8E5A6600EE13CA /* ViewController.swift in Sources */,
+				A99266AD1C8E5E7100EE13CA /* MediaItem.swift in Sources */,
+				A99266A51C8E5BD500EE13CA /* MediaRepository.swift in Sources */,
+				A99266771C8E5A6600EE13CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99266831C8E5A6600EE13CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A992668C1C8E5A6600EE13CA /* AstroPicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A992668E1C8E5A6600EE13CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99266971C8E5A6600EE13CA /* AstroPicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A99266891C8E5A6600EE13CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A99266721C8E5A6600EE13CA /* AstroPic */;
+			targetProxy = A99266881C8E5A6600EE13CA /* PBXContainerItemProxy */;
+		};
+		A99266941C8E5A6600EE13CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A99266721C8E5A6600EE13CA /* AstroPic */;
+			targetProxy = A99266931C8E5A6600EE13CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A992667A1C8E5A6600EE13CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A992667B1C8E5A6600EE13CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A992667F1C8E5A6600EE13CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A99266801C8E5A6600EE13CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A99266991C8E5A6600EE13CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A992669A1C8E5A6600EE13CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A992669C1C8E5A6600EE13CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstroPic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ejeff.AstroPic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A992669D1C8E5A6600EE13CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstroPic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ejeff.AstroPic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A992669F1C8E5A6600EE13CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AstroPicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ejeff.AstroPicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroPic.app/AstroPic";
+			};
+			name = Debug;
+		};
+		A99266A01C8E5A6600EE13CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AstroPicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ejeff.AstroPicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroPic.app/AstroPic";
+			};
+			name = Release;
+		};
+		A99266A21C8E5A6600EE13CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AstroPicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ejeff.AstroPicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AstroPic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A99266A31C8E5A6600EE13CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AstroPicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ejeff.AstroPicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AstroPic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A992666E1C8E5A6600EE13CA /* Build configuration list for PBXProject "AstroPic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99266991C8E5A6600EE13CA /* Debug */,
+				A992669A1C8E5A6600EE13CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A992669B1C8E5A6600EE13CA /* Build configuration list for PBXNativeTarget "AstroPic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A992669C1C8E5A6600EE13CA /* Debug */,
+				A992669D1C8E5A6600EE13CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A992669E1C8E5A6600EE13CA /* Build configuration list for PBXNativeTarget "AstroPicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A992669F1C8E5A6600EE13CA /* Debug */,
+				A99266A01C8E5A6600EE13CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99266A11C8E5A6600EE13CA /* Build configuration list for PBXNativeTarget "AstroPicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99266A21C8E5A6600EE13CA /* Debug */,
+				A99266A31C8E5A6600EE13CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A992666B1C8E5A6600EE13CA /* Project object */;
+}

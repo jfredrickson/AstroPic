@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AstroPic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-IA-Rpb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zxk-m2-8qp"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k3P-IA-Rpb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4f9-D3-vMA"/>
+                            <constraint firstAttribute="trailing" secondItem="k3P-IA-Rpb" secondAttribute="trailing" id="5BV-AH-cFb"/>
+                            <constraint firstAttribute="trailing" secondItem="k3P-IA-Rpb" secondAttribute="trailing" id="6jm-Ru-drA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k3P-IA-Rpb" secondAttribute="bottom" id="7AJ-K9-bbK"/>
+                            <constraint firstItem="k3P-IA-Rpb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YHI-oW-9X8"/>
+                            <constraint firstItem="k3P-IA-Rpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yw9-pX-pPO"/>
+                            <constraint firstItem="k3P-IA-Rpb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dz1-hI-xzK"/>
+                            <constraint firstItem="k3P-IA-Rpb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iVy-Jf-RQr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k3P-IA-Rpb" secondAttribute="bottom" id="lik-7a-Gvf"/>
+                            <constraint firstItem="k3P-IA-Rpb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qh9-0A-9VX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4f9-D3-vMA"/>
+                                <exclude reference="5BV-AH-cFb"/>
+                                <exclude reference="YHI-oW-9X8"/>
+                                <exclude reference="Yw9-pX-pPO"/>
+                                <exclude reference="iVy-Jf-RQr"/>
+                                <exclude reference="lik-7a-Gvf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="k3P-IA-Rpb" id="QL6-yN-UW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="437"/>
+        </scene>
+    </scenes>
+</document>
