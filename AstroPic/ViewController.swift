@@ -37,7 +37,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         // Set zoom scale
         let scaleWidth = scrollView.frame.width / scrollView.contentSize.width
-        let scaleHeight = scrollView.frame.height / scrollView.contentSize.width
+        let scaleHeight = scrollView.frame.height / scrollView.contentSize.height
         let smallerDimension = min(scaleWidth, scaleHeight)
         scrollView.minimumZoomScale = smallerDimension
         scrollView.maximumZoomScale = 1.0
