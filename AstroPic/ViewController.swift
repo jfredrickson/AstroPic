@@ -27,16 +27,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         // Set up scrolling
         scrollView.addSubview(imageView)
-        scrollView.contentSize = image.size
         
         // Recognize double tap to zoom and assign a callback method
         let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "scrollViewDoubleTapped:")
         doubleTapRecognizer.numberOfTapsRequired = 2
         doubleTapRecognizer.numberOfTouchesRequired = 1
         scrollView.addGestureRecognizer(doubleTapRecognizer)
-        
+    }
+    
+    override func viewDidLayoutSubviews() {
         zoomImage()
-        centerImage()
     }
     
     // Center the image view within the scroll view
@@ -55,6 +55,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     // Zoom to fit the image in the scroll view
     func zoomImage() {
+        scrollView.contentSize = imageView.bounds.size
         let scaleWidth = scrollView.frame.width / scrollView.contentSize.width
         let scaleHeight = scrollView.frame.height / scrollView.contentSize.height
         let smallerDimension = min(scaleWidth, scaleHeight)
@@ -96,7 +97,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
         zoomImage()
-        centerImage()
     }
 
     override func didReceiveMemoryWarning() {
