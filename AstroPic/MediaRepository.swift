@@ -25,15 +25,28 @@ class MediaRepository : NSObject {
         let mediaItem = MediaItem()
         let receivedData = try? NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)
         if let data = receivedData as? NSDictionary {
-            let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd"
-            mediaItem.date = dateFormatter.dateFromString(data.valueForKey("date") as! String)!
-            mediaItem.explanation = data.valueForKey("explanation") as! String!
-            mediaItem.hdUrl = NSURL(string: data.valueForKey("hdurl") as! String)!
-            mediaItem.sdUrl = NSURL(string: data.valueForKey("url") as! String)!
-            mediaItem.mediaType = data.valueForKey("media_type") as! String
-            mediaItem.title = data.valueForKey("title") as! String
-        }
+            if let date = data.valueForKey("date") as? String {
+                let dateFormatter = NSDateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+                if let dateObj = dateFormatter.dateFromString(date) {
+                    mediaItem.date = dateObj
+                }
+            }
+            if let explanation = data.valueForKey("explanation") as? String {
+                mediaItem.explanation = explanation
+            }
+            if let hdUrl = data.valueForKey("hdurl") as? String {
+                mediaItem.hdUrl = NSURL(string: hdUrl)!
+            }
+            if let sdUrl = data.valueForKey("url") as? String {
+                mediaItem.sdUrl = NSURL(string: sdUrl)!
+            }
+            if let mediaType = data.valueForKey("media_type") as? String {
+                mediaItem.mediaType = mediaType
+            }
+            if let title = data.valueForKey("title") as? String {
+                mediaItem.title = title
+            }        }
         return mediaItem
     }
 }
