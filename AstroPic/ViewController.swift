@@ -12,6 +12,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let item = repo.getDailyMedia()
         let hdImageData = NSData(contentsOfURL: item.hdUrl)!
         let image = UIImage(data: hdImageData)!
+        
+        // Add title
+        titleLabel.text = item.title
         
         // Display image in view
         imageView = UIImageView(image: image)
