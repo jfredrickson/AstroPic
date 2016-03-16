@@ -8,12 +8,11 @@
 
 import Foundation
 
-class MediaRepository : NSObject {
+class MediaRepository {
     let baseUrlPath = "https://api.nasa.gov/planetary/apod"
-    var apiKey : String = ""
+    var apiKey: String
     
-    override init() {
-        super.init()
+    init() {
         let filePath = NSBundle.mainBundle().pathForResource("PrivateConfiguration", ofType:"plist")
         let plist = NSDictionary(contentsOfFile:filePath!)
         apiKey = plist?.objectForKey("API_KEY") as! String
