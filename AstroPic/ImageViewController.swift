@@ -38,11 +38,18 @@ class ImageViewController: BaseMediaViewController, UIScrollViewDelegate {
     }
     
     override func viewDidLayoutSubviews() {
-        zoomImage()
+        zoomAndCenterImage()
     }
     
-    // Center the image view within the scroll view
-    func centerImage() {
+    func zoomAndCenterImage() {
+        scrollView.contentSize = imageView.bounds.size
+        let scaleWidth = scrollView.frame.width / scrollView.contentSize.width
+        let scaleHeight = scrollView.frame.height / scrollView.contentSize.height
+        let smallerDimension = min(scaleWidth, scaleHeight)
+        scrollView.minimumZoomScale = smallerDimension
+        scrollView.maximumZoomScale = 1.0
+        scrollView.zoomScale = smallerDimension
+        
         if imageView.frame.width < scrollView.bounds.width {
             imageView.frame.origin.x = (scrollView.bounds.width - imageView.frame.width) / 2
         } else {
@@ -53,17 +60,6 @@ class ImageViewController: BaseMediaViewController, UIScrollViewDelegate {
         } else {
             imageView.frame.origin.y = 0
         }
-    }
-    
-    // Zoom to fit the image in the scroll view
-    func zoomImage() {
-        scrollView.contentSize = imageView.bounds.size
-        let scaleWidth = scrollView.frame.width / scrollView.contentSize.width
-        let scaleHeight = scrollView.frame.height / scrollView.contentSize.height
-        let smallerDimension = min(scaleWidth, scaleHeight)
-        scrollView.minimumZoomScale = smallerDimension
-        scrollView.maximumZoomScale = 1.0
-        scrollView.zoomScale = smallerDimension
     }
     
     func scrollViewDoubleTapped(recognizer: UITapGestureRecognizer) {
@@ -92,13 +88,8 @@ class ImageViewController: BaseMediaViewController, UIScrollViewDelegate {
         return imageView
     }
     
-    // Center the image after zooming (implemented for UIScrollViewDelegate)
-    func scrollViewDidZoom(scrollView: UIScrollView) {
-        centerImage()
-    }
-    
     override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
-        zoomImage()
+        zoomAndCenterImage()
     }
 
     override func didReceiveMemoryWarning() {
