@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ImageViewController.swift
 //  AstroPic
 //
 //  Created by Jeff Fredrickson on 3/7/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ImageViewController: BaseMediaViewController, UIScrollViewDelegate {
 
     var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -17,13 +17,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Load image from repository
-        let repo = MediaRepository()
-        let item = repo.getDailyMedia()
-        let hdImageData = NSData(contentsOfURL: item.hdUrl)!
+        let hdImageData = NSData(contentsOfURL: mediaItem.hdUrl)!
         let image = UIImage(data: hdImageData)!
         
         // Add title
-        titleLabel.text = item.title
+        titleLabel.text = mediaItem.title
         
         // Display image in view
         imageView = UIImageView(image: image)
