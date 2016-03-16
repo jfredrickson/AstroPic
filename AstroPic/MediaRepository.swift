@@ -32,21 +32,22 @@ class MediaRepository : NSObject {
                     mediaItem.date = dateObj
                 }
             }
+            if let title = data.valueForKey("title") as? String {
+                mediaItem.title = title
+            }
             if let explanation = data.valueForKey("explanation") as? String {
                 mediaItem.explanation = explanation
-            }
-            if let hdUrl = data.valueForKey("hdurl") as? String {
-                mediaItem.hdUrl = NSURL(string: hdUrl)!
-            }
-            if let sdUrl = data.valueForKey("url") as? String {
-                mediaItem.sdUrl = NSURL(string: sdUrl)!
             }
             if let mediaType = data.valueForKey("media_type") as? String {
                 mediaItem.mediaType = mediaType
             }
-            if let title = data.valueForKey("title") as? String {
-                mediaItem.title = title
-            }        }
+            if let url = data.valueForKey("url") as? String {
+                mediaItem.url = NSURL(string: url)!
+            }
+            if let hdUrl = data.valueForKey("hdurl") as? String {
+                mediaItem.hdUrl = NSURL(string: hdUrl)!
+            }
+        }
         return mediaItem
     }
 }
