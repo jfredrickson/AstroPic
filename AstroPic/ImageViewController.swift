@@ -16,12 +16,9 @@ class ImageViewController: BaseMediaViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Load image from repository
-        let hdImageData = NSData(contentsOfURL: mediaItem.hdUrl)!
-        let image = UIImage(data: hdImageData)!
-        
-        // Add title
+        let image = mediaItem.thumbnailImage!
         titleLabel.text = mediaItem.title
+        navigationItem.title = mediaItem.localizedDate
         
         // Display image in view
         imageView = UIImageView(image: image)
@@ -31,7 +28,7 @@ class ImageViewController: BaseMediaViewController, UIScrollViewDelegate {
         scrollView.addSubview(imageView)
         
         // Recognize double tap to zoom and assign a callback method
-        let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "scrollViewDoubleTapped:")
+        let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(ImageViewController.scrollViewDoubleTapped))
         doubleTapRecognizer.numberOfTapsRequired = 2
         doubleTapRecognizer.numberOfTouchesRequired = 1
         scrollView.addGestureRecognizer(doubleTapRecognizer)

@@ -15,17 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Load image from repository
-        let repo = MediaRepository()
-        let item = repo.getDailyMedia()
-        var storyboardId = "UnknownMedia"
-        if item.mediaType == "image" {
-            storyboardId = "ImageMedia"
-        } else if item.mediaType == "video" {
-            storyboardId = "VideoMedia"
-        }
-        self.window?.rootViewController = self.window?.rootViewController?.storyboard?.instantiateViewControllerWithIdentifier(storyboardId)
-        (self.window?.rootViewController as! BaseMediaViewController).mediaItem = item
         return true
     }
 

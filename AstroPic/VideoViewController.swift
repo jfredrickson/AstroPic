@@ -14,8 +14,8 @@ class VideoViewController: BaseMediaViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let request = NSURLRequest(URL: mediaItem.url)
-        webView.loadRequest(request)
+//        let request = NSURLRequest(URL: mediaItem.url)
+//        webView.loadRequest(request)
     }
     
     override func didReceiveMemoryWarning() {

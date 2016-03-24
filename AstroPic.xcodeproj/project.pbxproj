@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92DD1931CA33F4700D0B3F7 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DD1921CA33F4700D0B3F7 /* IndexViewController.swift */; };
+		A92DD1951CA3400100D0B3F7 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DD1941CA3400100D0B3F7 /* MediaCell.swift */; };
+		A92DD1971CA352BC00D0B3F7 /* ImageFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DD1961CA352BC00D0B3F7 /* ImageFinder.swift */; };
+		A92DD1991CA352D400D0B3F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DD1981CA352D400D0B3F7 /* Image.swift */; };
+		A92DD19D1CA3771C00D0B3F7 /* MediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DD19C1CA3771C00D0B3F7 /* MediaMetadata.swift */; };
 		A95F41BD1C9912D200FDBB23 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F41BC1C9912D200FDBB23 /* VideoViewController.swift */; };
 		A95F41BF1C99156C00FDBB23 /* BaseMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F41BE1C99156C00FDBB23 /* BaseMediaViewController.swift */; };
 		A99266771C8E5A6600EE13CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99266761C8E5A6600EE13CA /* AppDelegate.swift */; };
@@ -41,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A92DD1921CA33F4700D0B3F7 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		A92DD1941CA3400100D0B3F7 /* MediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		A92DD1961CA352BC00D0B3F7 /* ImageFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFinder.swift; sourceTree = "<group>"; };
+		A92DD1981CA352D400D0B3F7 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A92DD19C1CA3771C00D0B3F7 /* MediaMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaMetadata.swift; sourceTree = "<group>"; };
 		A95F41BC1C9912D200FDBB23 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		A95F41BE1C99156C00FDBB23 /* BaseMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMediaViewController.swift; sourceTree = "<group>"; };
 		A99266731C8E5A6600EE13CA /* AstroPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +122,8 @@
 		A99266751C8E5A6600EE13CA /* AstroPic */ = {
 			isa = PBXGroup;
 			children = (
+				A92DD1921CA33F4700D0B3F7 /* IndexViewController.swift */,
+				A92DD19C1CA3771C00D0B3F7 /* MediaMetadata.swift */,
 				A99266AA1C8E5D4300EE13CA /* PrivateConfiguration.plist.sample */,
 				A99266761C8E5A6600EE13CA /* AppDelegate.swift */,
 				A99266781C8E5A6600EE13CA /* ImageViewController.swift */,
@@ -124,6 +136,9 @@
 				A99266AC1C8E5E7100EE13CA /* MediaItem.swift */,
 				A95F41BC1C9912D200FDBB23 /* VideoViewController.swift */,
 				A95F41BE1C99156C00FDBB23 /* BaseMediaViewController.swift */,
+				A92DD1941CA3400100D0B3F7 /* MediaCell.swift */,
+				A92DD1961CA352BC00D0B3F7 /* ImageFinder.swift */,
+				A92DD1981CA352D400D0B3F7 /* Image.swift */,
 			);
 			path = AstroPic;
 			sourceTree = "<group>";
@@ -285,10 +300,15 @@
 			files = (
 				A99266791C8E5A6600EE13CA /* ImageViewController.swift in Sources */,
 				A99266AD1C8E5E7100EE13CA /* MediaItem.swift in Sources */,
+				A92DD1951CA3400100D0B3F7 /* MediaCell.swift in Sources */,
 				A99266A51C8E5BD500EE13CA /* MediaRepository.swift in Sources */,
+				A92DD1971CA352BC00D0B3F7 /* ImageFinder.swift in Sources */,
 				A95F41BD1C9912D200FDBB23 /* VideoViewController.swift in Sources */,
 				A95F41BF1C99156C00FDBB23 /* BaseMediaViewController.swift in Sources */,
+				A92DD19D1CA3771C00D0B3F7 /* MediaMetadata.swift in Sources */,
+				A92DD1931CA33F4700D0B3F7 /* IndexViewController.swift in Sources */,
 				A99266771C8E5A6600EE13CA /* AppDelegate.swift in Sources */,
+				A92DD1991CA352D400D0B3F7 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

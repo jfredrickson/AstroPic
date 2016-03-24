@@ -18,35 +18,53 @@ class MediaRepository {
         apiKey = plist?.objectForKey("API_KEY") as! String
     }
     
-    func getDailyMedia() -> MediaItem {
-        let url = NSURL(string: baseUrlPath + "?api_key=" + apiKey)
-        let data = NSData(contentsOfURL: url!)
-        let mediaItem = MediaItem()
-        let receivedData = try? NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)
+    func requestMediaMetadata(date: NSDate, handler: (MediaMetadata) -> Void) {
+        let dateString = formatDate(date)
+        let url = NSURL(string: "\(baseUrlPath)?date=\(dateString)&api_key=\(apiKey)")!
+        let session = NSURLSession.sharedSession()
+        session.dataTaskWithURL(url) { (data, response, error) in
+            if error == nil {
+                let mediaMetadata = self.jsonToMediaMetadata(data!)
+                handler(mediaMetadata)
+            } else {
+                handler(MediaMetadata())
+            }
+        }.resume()
+    }
+    
+    func formatDate(date: NSDate) -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd"
+        return formatter.stringFromDate(date)
+    }
+    
+    func jsonToMediaMetadata(jsonData: NSData) -> MediaMetadata {
+        let mediaMetadata = MediaMetadata()
+        let receivedData = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
         if let data = receivedData as? NSDictionary {
             if let date = data.valueForKey("date") as? String {
                 let dateFormatter = NSDateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd"
                 if let dateObj = dateFormatter.dateFromString(date) {
-                    mediaItem.date = dateObj
+                    mediaMetadata.date = dateObj
                 }
             }
             if let title = data.valueForKey("title") as? String {
-                mediaItem.title = title
+                mediaMetadata.title = title
             }
             if let explanation = data.valueForKey("explanation") as? String {
-                mediaItem.explanation = explanation
+                mediaMetadata.explanation = explanation
             }
             if let mediaType = data.valueForKey("media_type") as? String {
-                mediaItem.mediaType = mediaType
+                mediaMetadata.mediaType = mediaType
             }
             if let url = data.valueForKey("url") as? String {
-                mediaItem.url = NSURL(string: url)!
+                mediaMetadata.url = NSURL(string: url)!
             }
             if let hdUrl = data.valueForKey("hdurl") as? String {
-                mediaItem.hdUrl = NSURL(string: hdUrl)!
+                mediaMetadata.hdUrl = NSURL(string: hdUrl)!
             }
         }
-        return mediaItem
+        return mediaMetadata
     }
 }

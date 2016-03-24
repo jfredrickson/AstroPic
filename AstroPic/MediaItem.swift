@@ -6,26 +6,32 @@
 //  Copyright © 2016 Jeff Fredrickson. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class MediaItem {
+    var id: String
+    var title: String?
+    var explanation: String?
+    var thumbnailImage: UIImage?
+    var url: NSURL?
+    var hdUrl: NSURL?
     var date: NSDate
-    var title: String
-    var explanation: String
-    var mediaType: String
-    var url: NSURL
-    var hdUrl: NSURL
-    
-    init(date: NSDate, title: String, explanation: String, mediaType: String, url: NSURL, hdUrl: NSURL) {
-        self.date = date
-        self.title = title
-        self.explanation = explanation
-        self.mediaType = mediaType
-        self.url = url
-        self.hdUrl = hdUrl
+    var localizedDate: String {
+        return NSDateFormatter.localizedStringFromDate(self.date, dateStyle: .LongStyle, timeStyle: .NoStyle)
+    }
+    var text: String {
+        if let title = self.title {
+            return "\(self.localizedDate): \(title)"
+        } else {
+            return self.localizedDate
+        }
     }
     
-    convenience init() {
-        self.init(date: NSDate(), title: "", explanation: "", mediaType: "UnknownMedia", url: NSURL(), hdUrl: NSURL())
+    init(date: NSDate) {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd"
+        self.id = formatter.stringFromDate(date)
+        self.date = date
+        self.thumbnailImage = UIImage(named: "placeholder")
     }
 }
